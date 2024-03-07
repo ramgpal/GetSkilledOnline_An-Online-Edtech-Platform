@@ -26,7 +26,7 @@
 'use strict';
 
 module.exports = PassThrough;
-var Transform = require('./_stream_transform');
+const Transform = require('./_stream_transform');
 require('inherits')(PassThrough, Transform);
 function PassThrough(options) {
   if (!(this instanceof PassThrough)) return new PassThrough(options);
