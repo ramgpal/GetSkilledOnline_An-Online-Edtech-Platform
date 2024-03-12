@@ -71,14 +71,14 @@ const Home = () => {
                 }
                 ctabtn1={
                     {
-                        btnText: "try it yourself",
+                        btnText: "Try it Yourself",
                         linkto: "/signup",
                         active: true,
                     }
                 }
                 ctabtn2={
                     {
-                        btnText: "learn more",
+                        btnText: "Learn more",
                         linkto: "/login",
                         active: false,
                     }
@@ -105,14 +105,14 @@ const Home = () => {
                 }
                 ctabtn1={
                     {
-                        btnText: "try it yourself",
-                        linkto: "/signup",
+                        btnText: "Continue Lesson",
+                        linkto: "/login",
                         active: true,
                     }
                 }
                 ctabtn2={
                     {
-                        btnText: "learn more",
+                        btnText: "Learn more",
                         linkto: "/login",
                         active: false,
                     }
@@ -125,8 +125,39 @@ const Home = () => {
 
       </div>
 
-      {/*Section 2  */}
 
+      {/*Section 2  */}
+      <div className='bg-pure-greys-5 text-richblack-700'>
+        <div className='hompepage_bg h-[310px]'>
+
+            <div className='w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-5 mx-auto'>
+                <div className='h-[150px]'></div>
+                <div className='flex flex-row gap-7 text-white'>
+                    <CTAButton active={true} linkto={"/signup"}>
+                        <div className="flex items-center gap-3">
+                            Explore Full Catalog
+                            <FaArrowRight/>
+                        </div>
+                    </CTAButton>
+                    <CTAButton active={false} linkto={"/signup"}>
+                        <div>Learn more</div>
+                    </CTAButton>
+                </div>
+            </div>
+        </div>
+
+        <div className='mx-auto max-w-maxContent w-11/12 flex flex-col items-center justify-between gap-7'>
+            <div className='flex flex-row gap-5 '>
+                <div className='text-4xl font-semibold w-[45%]'>Get the skills you need for a <HighlightText text = {"Job that is in demand"}/> </div>
+            </div>
+
+            <div className='flex flex-col gap-10 w-[45%]'>
+                <div></div>
+            </div>
+
+        </div>
+
+      </div>
 
       {/*Section 3 */}
 
