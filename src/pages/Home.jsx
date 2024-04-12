@@ -9,6 +9,7 @@ import CodeBlocks from '../components/core/HomePage/CodeBlocks'
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection";
 import TimelineSection from "../components/core/HomePage/TimelineSection";
 import InstructorSection from "../components/core/HomePage/InstructorSection";
+import Footer from "../components/common/Footer";
 
 const Home = () => {
   return (
@@ -179,7 +180,7 @@ const Home = () => {
       {/*Section 3 */}
       <div className='w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-8 bg-richblack-900 text-white'>
         <InstructorSection/>
-        <h2 className='text-center text-4xl font-semibold mt-10'>review from other Learners</h2>
+        <h2 className='text-center text-4xl font-semibold mt-10'>Reviews from other Learners</h2>
         
         {/* Review slider */}
         <div></div>
@@ -188,7 +189,7 @@ const Home = () => {
 
 
       {/*Footer */}
-
+      <Footer/>
 
     </div>
   )
