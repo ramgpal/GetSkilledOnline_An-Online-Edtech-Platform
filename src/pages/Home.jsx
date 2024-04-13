@@ -10,6 +10,7 @@ import LearningLanguageSection from "../components/core/HomePage/LearningLanguag
 import TimelineSection from "../components/core/HomePage/TimelineSection";
 import InstructorSection from "../components/core/HomePage/InstructorSection";
 import Footer from "../components/common/Footer";
+import ExploreMore from "../components/core/HomePage/ExploreMore";
 
 const Home = () => {
   return (
@@ -126,6 +127,8 @@ const Home = () => {
                 codeColor={"text-yellow-25"}
             />
         </div>
+
+        <ExploreMore/>
 
       </div>
 
