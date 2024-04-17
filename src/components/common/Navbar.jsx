@@ -31,9 +31,7 @@ function Navbar() {
       }
       setLoading(false)
     })()
-  }, [])
-
-  // console.log("sub links", subLinks)
+  }, []);
 
   const matchRoute = (route) => {
     return matchPath({ path: route }, location.pathname)
@@ -46,10 +44,12 @@ function Navbar() {
       } transition-all duration-200`}
     >
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
+
         {/* Logo */}
         <Link to="/">
           <img src={logo} alt="Logo" width={160} height={32} loading="lazy" />
         </Link>
+
         {/* Navigation links */}
         <nav className="hidden md:block">
           <ul className="flex gap-x-6 text-richblack-25">
@@ -112,6 +112,8 @@ function Navbar() {
             ))}
           </ul>
         </nav>
+
+
         {/* Login / Signup / Dashboard */}
         <div className="hidden items-center gap-x-4 md:flex">
           {user && user?.accountType !== ACCOUNT_TYPE.INSTRUCTOR && (
@@ -148,4 +150,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
