@@ -11,7 +11,7 @@ import "../../App.css"
 // Icons
 import { FaStar } from "react-icons/fa"
 // Import required modules
-import { Autoplay, FreeMode, Pagination } from "swiper/modules"
+import { Autoplay, FreeMode, Pagination } from "swiper"
 
 // Get apiFunction and the endpoint
 import { apiConnector } from "../../services/apiConnector"
@@ -22,16 +22,20 @@ function ReviewSlider() {
   const truncateWords = 15
 
   useEffect(() => {
-    ;(async () => {
-      const { data } = await apiConnector(
-        "GET",
-        ratingsEndpoints.REVIEWS_DETAILS_API
-      )
-      if (data?.success) {
-        setReviews(data?.data)
+    const fetchReviews = async () => {
+      try {
+        const { data } = await apiConnector("GET", ratingsEndpoints.REVIEWS_DETAILS_API);
+        if (data?.success) {
+          setReviews(data?.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch reviews:", error);
       }
-    })()
-  }, [])
+    };
+    
+    fetchReviews();
+  }, []);
+  
 
   return (
     <div className="text-white">

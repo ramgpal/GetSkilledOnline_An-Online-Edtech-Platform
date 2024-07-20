@@ -8,7 +8,7 @@ const courseRoutes = require("./routes/Course");
 
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
-const cors = require("cors"); // CORS -> Cross-origin resource sharing (CORS) is a mechanism for integrating frontend with backend.
+const cors = require("cors"); 
 const {cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");

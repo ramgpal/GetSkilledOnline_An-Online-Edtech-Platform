@@ -26,7 +26,7 @@
     "react-super-responsive-table": "^5.2.3",
     "react-type-animation": "^3.2.0",
     "redux-toolkit": "^1.1.2",
-    "swiper": "^11.1.4",
+    "swiper": "^9.3.1",
     "video-react": "^0.16.0",
     "web-vitals": "^2.1.4"
   },

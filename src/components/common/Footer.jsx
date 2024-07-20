@@ -172,7 +172,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Ram G Pal © 2023</div>
+          <div className="text-center">Made By Ram</div>
         </div>
       </div>
     </div>
