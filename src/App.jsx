@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { Route, Routes, useNavigate } from "react-router-dom"
 
 // Components
-import Navbar from "./components/Common/Navbar"
+import Navbar from "./components/common/Navbar"
 import OpenRoute from "./components/core/Auth/OpenRoute"
 import PrivateRoute from "./components/core/Auth/PrivateRoute"
 import AddCourse from "./components/core/Dashboard/AddCourse"
@@ -45,7 +45,7 @@ function App() {
       const token = JSON.parse(localStorage.getItem("token"))
       dispatch(getUserDetails(token, navigate))
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [])
 
   return (
