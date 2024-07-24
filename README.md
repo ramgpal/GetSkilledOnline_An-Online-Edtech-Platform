@@ -55,36 +55,11 @@ The platform follows a client-server architecture with three main components:
 
 - Node.js, Express.js, MongoDB, JWT, Bcrypt, Mongoose.
 
-### Data Models
-
-- **Student schema**: Name, email, password, course details.
-- **Instructor schema**: Name, email, password, course details.
-- **Course schema**: Course name, description, instructor details, media content.
-
-## API Design
-
-RESTful API using Node.js and Express.js, with JSON for data exchange.
-
-### Sample Endpoints
-
-- **/api/auth/signup (POST)**: Create a new user account.
-- **/api/auth/login (POST)**: Log in and generate JWT token.
-- **/api/courses (GET)**: List all courses.
-- **/api/courses/:id (GET)**: Get course details by ID.
-- **/api/courses (POST)**: Create a new course.
-- **/api/courses/:id (PUT)**: Update a course by ID.
-- **/api/courses/:id (DELETE)**: Delete a course by ID.
-
-### Sample Requests and Responses
-
-- **GET /api/courses**: List of all courses.
-- **POST /api/courses**: Create a new course.
-- **PUT /api/courses/:id**: Update a course by ID.
-- **DELETE /api/courses/:id**: Delete a course by ID.
 
 ## Deployment
 
-Set up the hosting environment and infrastructure, create deployment scripts and configuration files.
+- Backend hosted on onrender
+- Frontend hosted on vercel
 
 ## Future Enhancements
 
