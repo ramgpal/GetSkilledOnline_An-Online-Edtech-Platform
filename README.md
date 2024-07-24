@@ -3,7 +3,7 @@
 
 ## Project Description
 
-GetSkilledOnline is a fully functional ed-tech platform built using the MERN stack (ReactJS, NodeJS, MongoDB, and ExpressJS). It provides:
+'GetSkilledOnline' is a fully functional ed-tech platform built using the MERN stack (ReactJS, NodeJS, MongoDB, and ExpressJS). It provides:
 
 - An engaging learning experience for students.
 - A platform for instructors to showcase their expertise.
