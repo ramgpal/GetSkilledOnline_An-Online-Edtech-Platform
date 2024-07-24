@@ -61,13 +61,6 @@ The platform follows a client-server architecture with three main components:
 - Backend hosted on onrender
 - Frontend hosted on vercel
 
-## Future Enhancements
-
-- Interactive features for students and instructors.
-- Advanced analytics for instructors and admin.
-- Expanded payment options.
-- Enhanced user management and security.
-
 ---
 
 GetSkilledOnline provides an immersive learning experience for students and a platform for instructors to showcase their expertise, supported by a robust and scalable technical infrastructure.
