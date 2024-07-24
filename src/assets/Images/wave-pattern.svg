@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="wavePattern" patternUnits="userSpaceOnUse" width="200" height="200">
+      <path d="M0,100 C50,150 150,50 200,100 C250,150 350,50 400,100 C450,150 550,50 600,100 C650,150 750,50 800,100" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </pattern>
+    <rect width="100%" height="100%" fill="url(#wavePattern)" />
+  </svg>
+  

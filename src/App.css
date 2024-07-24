@@ -1,12 +1,73 @@
-@tailwind base;
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  overflow-x: hidden;
+
+/* .custom-bg {
+  background: #1c1c1c; 
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+} */
+
+html, body {
+    overflow-x: hidden;
 }
 
+.homepage_bg {
+    background: url("../src/assets/Images/bghome.svg");
+}
+.codeblock1 {
+    width: 372.95px;
+    height: 257.05px;
+    border-radius: 100%;
+    left: calc(50% - 372.95px / 2 - 76.53px);
+    top: calc(50% - 257.05px / 2 - 47.47px);
+    background: linear-gradient(
+      123.77deg,
+      #8a2be2 -6.46%,
+      #ffa500 59.04%,
+      #f8f8ff 124.53%
+    );
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+  }
+.codeblock2 {
+    position: absolute;
+    width: 372.95px;
+    height: 257.05px;
+    left: calc(50% - 372.95px / 2 - 76.53px);
+    top: calc(50% - 257.05px / 2 - 47.47px);
+    border-radius: 100%;
+    background: linear-gradient(
+      118.19deg,
+      #1fa2ff -3.62%,
+      #12d8fa 50.44%,
+      #a6ffcb 104.51%
+    );
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+  }
+
+/*https://10015.io/tools/css-loader-generator*/
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid #f1f2ff;
+  animation: spinner-bulqg1 0.8s infinite linear alternate,
+    spinner-oaa3wk 1.6s infinite linear;
+}
+
+.form-style {
+  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+}
+
+  
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -43,49 +104,6 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* https://10015.io/tools/css-loader-generator */
-.spinner {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 9px solid #f1f2ff;
-  animation: spinner-bulqg1 0.8s infinite linear alternate,
-    spinner-oaa3wk 1.6s infinite linear;
-}
-
-.codeblock1 {
-  width: 372.95px;
-  height: 257.05px;
-  border-radius: 100%;
-  left: calc(50% - 372.95px / 2 - 76.53px);
-  top: calc(50% - 257.05px / 2 - 47.47px);
-  background: linear-gradient(
-    123.77deg,
-    #8a2be2 -6.46%,
-    #ffa500 59.04%,
-    #f8f8ff 124.53%
-  );
-  opacity: 0.2;
-  filter: blur(34px);
-  transform: matrix(1, 0, -0.03, 1, 0, 0);
-}
-.codeblock2 {
-  position: absolute;
-  width: 372.95px;
-  height: 257.05px;
-  left: calc(50% - 372.95px / 2 - 76.53px);
-  top: calc(50% - 257.05px / 2 - 47.47px);
-  border-radius: 100%;
-  background: linear-gradient(
-    118.19deg,
-    #1fa2ff -3.62%,
-    #12d8fa 50.44%,
-    #a6ffcb 104.51%
-  );
-  opacity: 0.2;
-  filter: blur(34px);
-  transform: matrix(1, 0, -0.03, 1, 0, 0);
-}
 .code-border {
   border: 2px solid;
   border-image-slice: 1;
@@ -97,10 +115,6 @@ details > summary::-webkit-details-marker {
     rgba(17, 30, 50, 0.38) 104.96%
   );
   /* backdrop-filter: blur(26px); */
-}
-.homepage_bg {
-  background: url("../src/assets/Images/bghome.svg");
-  /* background-size: contain; */
 }
 
 @keyframes spinner-bulqg1 {
@@ -238,9 +252,71 @@ details > summary::-webkit-details-marker {
 .lable-style {
   @apply text-[14px] text-richblack-5;
 }
-.form-style {
-  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
-}
+
 .section_heading {
   @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
+}
+
+
+.aboutcss{
+  box-shadow: 2px 0 100px rgba(0,0,0,0.3);
+}
+
+
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scroll-container {
+  height: 500px; 
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp linear infinite;
+  animation-duration: 70s; /* Adjust the speed as needed */
+  will-change: transform;
+  position: absolute;
+  top: 0;
+}
+
+.gradient-top, .gradient-bottom {
+  position: absolute;
+  width: 100%;
+  height: 50px; /* Adjust this height as needed */
+  z-index: 50;
+}
+
+.gradient-top {
+  top: 0;
+  background: linear-gradient(180deg, #000814, rgba(11, 12, 16, 0));
+}
+
+
+.gradient-bottom {
+  bottom: 0;
+  background: linear-gradient(0deg, #000814, rgba(11, 12, 16, 0));
+}
+
+
+/* Css of reviewSlider */
+.swiper-pagination-bullet {
+  background: white !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }

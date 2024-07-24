@@ -1,5 +1,5 @@
 import React from 'react'
-import HighlightText from '../HomePage/HighlightText'
+import HighlightText from '../HomePage/HighLightText'
 
 const Quote = () => {
   return (

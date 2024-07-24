@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .slanted-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slanted-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #013f4f;                                    /* Adjust the color if needed */
+    transform: skewX(-10deg);
+    transform-origin: top left;
+    z-index: 0;
+  }
+
+  .slanted-bg-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-darkblue {
+    background-color: #013f4f;
+  }
+}
+
+
+.yellow-line {
+  border-left: 6px solid rgb(31, 216, 47);
+  height: 200px;                              /* Adjust the height as needed */
+  position: relative;
+  transform: rotate(15deg);                   /* Adjust the angle as needed */
+}

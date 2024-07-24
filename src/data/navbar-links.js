@@ -9,7 +9,7 @@ export const NavbarLinks = [
   },
   {
     title: "About Us",
-    path: "/about",
+    path: "/#about",
   },
   {
     title: "Contact Us",
