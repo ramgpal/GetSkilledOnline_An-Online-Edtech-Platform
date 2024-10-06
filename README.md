@@ -1,5 +1,5 @@
 
-# GetSkilledOnline Online Education Platform (MERN App)
+# GetSkilledOnline: An Online Education Platform (MERN App)
 
 ## Project Description
 
