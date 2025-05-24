@@ -60,6 +60,7 @@ The platform follows a client-server architecture with three main components:
 
 - Backend hosted on onrender
 - Frontend hosted on vercel
+- Here is the url: https://getskilledonline-frontend.vercel.app/
 
 ---
 
